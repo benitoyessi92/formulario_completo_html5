@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario completo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section class="demo-form-card">
+    <h3>Formulario completo</h3>
+    <p>Completa todos los campos.</p>
+
+    <form>
+      <label>Nombre completo:</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+      <label>Edad:</label>
+      <input type="number" id="edad" placeholder="Escribe tu edad">
+
+      <label>Correo:</label>
+      <input type="email" id="correo" placeholder="Escribe tu correo">
+
+      <label>Grupo:</label>
+      <input type="text" id="grupo" placeholder="Ej. 4A">
+
+      <label>Ciudad:</label>
+      <select id="ciudad">
+        <option value="">Selecciona una ciudad</option>
+        <option>Puebla</option>
+        <option>CDMX</option>
+        <option>Guadalajara</option>
+        <option>Monterrey</option>
+      </select>
+
+      <label>Teléfono:</label>
+      <input type="tel" id="telefono" placeholder="10 dígitos">
+
+      <label>Comentario:</label>
+      <textarea id="comentario" placeholder="Escribe un comentario"></textarea>
+
+      <button type="button" onclick="mostrarDatos()">Enviar</button>
+    </form>
+  </section>
+
+  <section class="resultado-card">
+    <h3>Resultado</h3>
+    <div id="resultado">Aquí aparecerán los datos.</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
