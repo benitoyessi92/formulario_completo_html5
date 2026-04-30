@@ -1,0 +1,77 @@
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:20px;
+
+  /* FONDO VERDE CLARITO + ROSA */
+  background: linear-gradient(180deg, #c8f7dc, #ffd1dc);
+}
+
+.demo-form-card, .resultado-card{
+  background:#ffffff;
+  border-radius:30px;
+  padding:25px;
+  max-width:380px;
+  margin:20px auto;
+  box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+h3{
+  color:#ff4d88; /* rosa */
+}
+
+p{
+  color:#555;
+}
+
+/* FORM */
+form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+label{
+  font-weight:bold;
+  color:#2e7d32; /* verde */
+}
+
+/* INPUTS */
+input, textarea, select{
+  padding:12px;
+  border-radius:15px;
+  border:2px solid #b2f2d7; /* verde claro */
+  outline:none;
+  font-size:14px;
+}
+
+input:focus, textarea:focus, select:focus{
+  border-color:#ff4d88; /* rosa */
+}
+
+/* BOTÓN */
+button{
+  margin-top:10px;
+  padding:15px;
+  border:none;
+  border-radius:25px;
+
+  /* degradado rosa */
+  background: linear-gradient(90deg, #ff4d88, #ff99cc);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* RESULTADO */
+#resultado{
+  margin-top:10px;
+  padding:15px;
+  border-radius:15px;
+  background:#f0fff5; /* verde muy claro */
+}
